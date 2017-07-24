@@ -1,0 +1,101 @@
+/*------------------------------------*\
+            COMMON SECTION
+\*------------------------------------*/
+
+body {
+  position: static;
+  min-width: 1500px;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1160px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 50%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/*------------------------------------*\
+            INDEX SECTION
+\*------------------------------------*/
+
+.header {
+  background-color: grey;
+  height: 50px;
+}
+
+.header-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: inherit;
+}
+
+.logo {
+  text-decoration: underline;
+  text-transform: uppercase;
+  display: block;
+}
+
+.header-logo {
+}
+
+.header-menu {
+  margin: 0 10px;
+}
+
+.header-menu > * {
+  width: 25%;
+}
+
+.header-menu > *:hover {
+  background-color: gainsboro;
+  box-shadow: 0 -15px 50px -10px black inset;
+}
+
+.header-menu li {
+  flex-basis: 25%;
+  text-align: center;
+}
+
+.header-menu a {
+  padding: 10px;
+}
+
+.header-menu > li:not(:nth-child(1)) {
+  border-left: 3px solid darkgrey;
+}
+
+/*------------------------------------*\
+            DELETE SECTION
+\*------------------------------------*/
+.visible-block {
+  width:auto;
+  height: 150px;
+  background-color: rgba(125, 125, 125, 0.75);
+}
+
+main .visible-block {
+  margin: 50px 0;
+}
